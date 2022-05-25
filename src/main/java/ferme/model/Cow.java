@@ -16,11 +16,7 @@ public class Cow {
 	}
 
 	public Cow(String breed, int birthYear, double maximumOutputMilk) {
-		this.breed = breed;
-		this.colour = Colour.RED;
-		this.birthYear = birthYear;
-		this.maximumOutputMilk = maximumOutputMilk;
-		this.currentMilkAvailable = 0;
+		this(breed, Colour.RED, birthYear, maximumOutputMilk);
 	}
 
 	// Cette méthode simule ce qui se passe lorsque la vache mange pendant

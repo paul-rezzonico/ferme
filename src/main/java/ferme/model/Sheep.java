@@ -21,17 +21,12 @@ public class Sheep {
 	}
 
 	public Sheep(String breed, int birthYear, double maximumOutputMilk, double maximumAmountOfWool) {
-		this.breed = breed;
-		this.colour = Colour.WHITE;
-		this.birthYear = birthYear;
-		this.maximumOutputMilk = maximumOutputMilk;
-		this.currentMilkAvailable = 0;
-		this.maximumAmountOfWool = maximumAmountOfWool;
-		this.currentWoolAvailable = 0;
+		this(breed, Colour.WHITE, birthYear, maximumOutputMilk, maximumAmountOfWool);
 	}
 
 	// Cette méthode simule ce qui se passe lorsque la brebis mange pendant
 	// une heure
+	
 	public void eat() {
 		this.currentMilkAvailable += this.maximumOutputMilk / 15;
 		if (this.currentMilkAvailable > this.maximumOutputMilk) {
